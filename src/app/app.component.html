@@ -1,0 +1,23 @@
+<tr-viewer  #viewer1
+[containerStyle]="viewerContainerStyle"
+[serviceUrl]="'http://localhost:61292/v2/api/reports/'"
+[reportSource]="{ report: 'DateRangeGLReport.trdp',
+parameters: {
+    District: 'Castaic',
+    DistrictId: 2,
+    EndDate:'11/18/2022',
+    GroupByDate: false,
+    Note:'',
+    School:'(All Schools)',
+    SchoolIds:'68,51,52,53,60',
+    ShowNetDeposit: false,
+    StartDate:'10/19/2022',
+    Title:'General Ledger Report',
+    Token:'343c8cd0ce9442a68d22686a6f28ca7aOZSsXHWm8jRJUpx0ddECt',
+    TransactionOrBatch:'Batch'
+    } }"
+    [viewMode]="'INTERACTIVE'"
+    [scaleMode]="'SPECIFIC'"
+    [scale]="1.0"
+    [enableAccessibility]="false">
+</tr-viewer>
